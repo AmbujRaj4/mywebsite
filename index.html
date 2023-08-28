@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <title>St. Aurobindo Convent</title>
+    <style>
+      /* Style the body */
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        height: 100%;
+        background-color:yellowgreen;
+      }
+      
+      /* Style the header */
+      header {
+        background-color: #004d99;
+        color: white;
+        padding: 20px;
+      }
+
+      .slogan{
+        color:pink;
+      }
+
+     
+      
+      /* Style the navigation menu */
+      nav ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color:pink;
+      }
+
+      nav li {
+        float: left;
+      }
+
+      nav li a {
+        display: block;
+        color:brown;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+      }
+
+      nav li a:hover {
+        background-color:yellowgreen;
+      }
+
+      /* Style the main content */
+      main {
+        padding: 20px;
+        height: 100%;
+      }
+
+      .slideshow{ display:block;
+        margin-left:auto;
+        margin-right:auto;
+        border:darkgray;}
+
+
+
+      h1 {
+        font-size: 40px;
+        text-align: center;
+        margin-top: 50px;
+        
+      }
+      h2{
+        font-size:38px;
+        text-align: center;
+        margin-top: 60px;
+        color:red;
+      }
+
+      
+
+      img{border-radius:50%;}
+
+      p {
+        font-size: 18px;
+        text-align: center;
+        margin-bottom: 50px;
+
+      }
+
+     
+
+      /* Style the footer */
+      footer {
+        background-color: #004d99;
+        color: white;
+        text-align: center;
+        padding: 10px;
+        position:fixed;
+        bottom: 0;
+        width: 100%;
+      }
+
+      footer p {
+        margin: 0;
+      }
+
+
+      /* Media queries for responsive design */
+@media screen and (max-width: 768px) {
+  header {
+    padding: 10px;
+  }
+  
+  nav {
+    padding: 5px;
+  }
+  
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  nav ul li {
+    margin: 5px 0;
+  }
+  
+  main {
+    padding: 10px;
+  }
+  
+  h1 {
+    font-size: 24px;
+  }
+  
+  p {
+    font-size: 16px;
+  }
+  
+  
+  
+   footer {
+    padding: 10px;
+  }
+  
+  footer p {
+    font-size: 14px;
+    margin-bottom: 5px;
+  }
+  
+  footer ul {
+    margin-bottom: 5px;
+  }
+  
+  footer ul li {
+    margin: 0 5px;
+  }
+}
+
+
+
+
+
+
+
+
+      
+    </style>
+  </head>
+
+
+  <body>
+
+    <header>
+      <div id="titleName">
+          <h1>St. Aurobindo Convent</h1>
+        <div class="slogan"> 
+         <h2><b>Affiliated to the BSEB Education, Banka</b></h2>
+        </div>
+      </div>
+     
+    </header>
+
+
+    <nav>
+      <ul>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="admissions.html">Admissions</a></li>
+        <li><a href="academics.html">Academics</a></li>
+        <li><a href="video.html">Gallary</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+      </ul>
+    </nav>
+
+
+    <main>
+      <h1>Welcome to St. Aurobindo Convent</h1>
+      <h2>"All of us do not have equal talent.<br> But, all of us have an equal opportunity to develop our talents."</h2>
+
+      <div class="slideshow" style="max-width:900px;">
+          <div class="mySlides" >
+          <img src="myImages/pencils.jpg" style="width:100%"></div>
+          <div class="mySlides" >
+          <img src="myImages/jass.jpg" style="width:100%"></div>
+          <div class="mySlides" >
+          <img src="myImages/jeswin.jpg" style="width:100%"></div>     
+        
+      </div>
+
+      
+<p>We are a premier school located in Katoria, committed to providing quality education to our students.</p>
+<p>
+      St. Aurobindo Convent was started in the year 1990. With the student teacher ratio being 105:1 the primary medium of instruction is English. Every member of the school is committed to provide the best learning environment.
+      This school runs classes from 1 to 10 to provide education to students. 211 is approximately the current student strength of this school. This school’s library has 700 books.
+      The school has given exceptional results in the academic sphere and its students have excelled in extra co-curricular activities too.</p>
+    </main>
+
+
+    
+
+    <script>
+      var myIndex = 0;
+      slideShow();
+
+      function slideShow(){
+        var i;
+        var x = document.getElementsByClassName("mySlides");
+
+        for(i = 0; i < x.length; i++){
+          x[i].style.display="none";
+        }
+        myIndex++;
+          if(myIndex>x.length){myIndex = 1}
+            x[myIndex-1].style.display="block";
+          setTimeout(slideShow,2000);
+      }
+    </script>
+
+    <footer>
+      <p>copyright &copy; 2023 St. Aurobindo Convent. All Rights Reserved.</p>
+    </footer>
+  </body>
+</html>
+
+
